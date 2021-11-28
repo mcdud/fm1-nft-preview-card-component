@@ -39,25 +39,58 @@ body {
   border-radius: 1rem;
 }
 
-.nft-card-component img {
+.nft-card-component > img {
   width: 85.2%;
   margin: 1.5rem;
   border-radius: 0.5rem;
 }
 
-.nft-card-component h1 {
+.nft-card-component > h1 {
   width: 85.2%;
   color: var(--white);
   font-size: 1.37rem;
 }
 
-.nft-card-component p {
+.nft-card-component > p {
   width: 85.2%;
   color: var(--soft-blue);
   margin-top: 0.9rem;
   font-size: 1rem;
   font-weight: 300;
   line-height: 155%;
+}
+
+.nft-card-component-numbers {
+  width: 85.2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.9rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line-dark-blue);
+  font-size: 1rem;
+}
+
+.nft-card-component-numbers-eth {
+  color: var(--cyan);
+}
+
+.nft-card-component-numbers-eth::before {
+  position: relative;
+  top: 0.2rem;
+  content: url("/images/icon-ethereum.svg");
+  padding-right: 0.35rem;
+}
+
+.nft-card-component-numbers-days {
+  color: var(--soft-blue);
+}
+
+.nft-card-component-numbers-days::before {
+  position: relative;
+  top: 0.2rem;
+  content: url("/images/icon-clock.svg");
+  padding-right: 0.35rem;
 }
 
 .nft-card-component-creator img {
