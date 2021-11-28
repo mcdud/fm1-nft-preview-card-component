@@ -84,6 +84,7 @@ body {
 
 .nft-card-component-numbers-days {
   color: var(--soft-blue);
+  font-weight: 300;
 }
 
 .nft-card-component-numbers-days::before {
@@ -93,6 +94,25 @@ body {
   padding-right: 0.35rem;
 }
 
-.nft-card-component-creator img {
-  width: 32px;
+.nft-card-component-creator {
+  width: 85.2%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.9rem;
+}
+.nft-card-component-creator > img {
+  width: 34px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.nft-card-component-creator > p {
+  padding-left: 1rem;
+  color: var(--soft-blue);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.nft-card-component-creator > p > span {
+  color: var(--white);
 }
