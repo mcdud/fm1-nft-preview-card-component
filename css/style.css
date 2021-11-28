@@ -28,27 +28,59 @@ body {
 
 .nft-card-component {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   width: 87%;
   max-width: 326px;
   height: 81.5%;
-  max-width: 544px;
+  max-height: 544px;
   background-color: var(--card-bg-dark-blue);
   border-radius: 1rem;
 }
 
-.nft-card-component > img {
+.nft-card-component-image {
   width: 85.2%;
+  height: 52%;
   margin: 1.5rem;
   border-radius: 0.5rem;
+  position: relative;
+  background: url("/images/image-equilibrium.jpg") center center/cover;
 }
 
+.nft-card-component-image-overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.nft-card-component-image-overlay img {
+  width: 42px;
+  height: 42px;
+}
+
+.nft-card-component-image:hover .nft-card-component-image-overlay {
+  display: flex;
+  cursor: pointer;
+}
 .nft-card-component > h1 {
   width: 85.2%;
   color: var(--white);
   font-size: 1.37rem;
+  transition: 0.5s;
+}
+
+.nft-card-component > h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
 }
 
 .nft-card-component > p {
@@ -115,4 +147,10 @@ body {
 
 .nft-card-component-creator > p > span {
   color: var(--white);
+}
+
+.nft-card-component-creator > p > span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+  transition: 0.5s;
 }
