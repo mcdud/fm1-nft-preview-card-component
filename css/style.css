@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 18px;
   font-family: "Outfit", sans-serif;
   background-color: var(--main-bg-dark-blue);
@@ -153,4 +154,15 @@ body {
   color: var(--cyan);
   cursor: pointer;
   transition: 0.5s;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem;
+  color: var(--soft-blue);
+}
+
+.attribution > a {
+  color: var(--cyan);
 }
