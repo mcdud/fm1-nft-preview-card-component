@@ -20,9 +20,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![./screenshot.png]
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://mcdud.github.io/fm1-nft-preview-card-component/)
+- Live Site URL: [https://mcdud.github.io/fm1-nft-preview-card-component/]
