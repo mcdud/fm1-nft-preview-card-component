@@ -29,23 +29,20 @@ body {
 
 .nft-card-component {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 87%;
   max-width: 326px;
-  height: 81.5%;
   max-height: 544px;
+  padding: 24px;
   background-color: var(--card-bg-dark-blue);
   border-radius: 1rem;
 }
-
 .nft-card-component-image {
-  width: 85.2%;
-  height: 52%;
-  margin: 1.5rem;
-  border-radius: 0.5rem;
   position: relative;
-  background: url("../images/image-equilibrium.jpg") center center/cover;
+}
+
+.nft-card-component-image > img {
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 .nft-card-component-image-overlay {
@@ -57,8 +54,6 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
   border-radius: 0.5rem;
   background-color: hsla(178, 100%, 50%, 0.5);
 }
@@ -73,7 +68,7 @@ body {
   cursor: pointer;
 }
 .nft-card-component > h1 {
-  width: 85.2%;
+  margin-top: 1.5rem;
   color: var(--white);
   font-size: 1.37rem;
   transition: 0.5s;
@@ -85,7 +80,6 @@ body {
 }
 
 .nft-card-component > p {
-  width: 85.2%;
   color: var(--soft-blue);
   margin-top: 0.9rem;
   font-size: 1rem;
@@ -94,7 +88,6 @@ body {
 }
 
 .nft-card-component-numbers {
-  width: 85.2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,11 +101,10 @@ body {
   color: var(--cyan);
 }
 
-.nft-card-component-numbers-eth::before {
+.nft-card-component-numbers-eth > svg {
   position: relative;
-  top: 0.2rem;
-  content: url("../images/icon-ethereum.svg");
-  padding-right: 0.35rem;
+  top: 0.15rem;
+  margin-right: 0.35rem;
 }
 
 .nft-card-component-numbers-days {
@@ -120,15 +112,13 @@ body {
   font-weight: 300;
 }
 
-.nft-card-component-numbers-days::before {
+.nft-card-component-numbers-days > svg {
   position: relative;
-  top: 0.2rem;
-  content: url("../images/icon-clock.svg");
-  padding-right: 0.35rem;
+  top: 0.15rem;
+  margin-right: 0.35rem;
 }
 
 .nft-card-component-creator {
-  width: 85.2%;
   display: flex;
   align-items: center;
   margin-top: 0.9rem;
