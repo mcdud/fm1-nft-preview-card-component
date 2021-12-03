@@ -24,5 +24,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-component--LxaSJek2]
 - Live Site URL: [https://mcdud.github.io/fm1-nft-preview-card-component/]
